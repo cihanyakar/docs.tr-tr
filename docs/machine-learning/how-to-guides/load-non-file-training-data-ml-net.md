@@ -1,6 +1,6 @@
 ---
-title: Bir metin dosyasına - ML.NET olmayan veriler ile machine learning modeli eğitme
-description: ML.NET machine learning modeli eğitimi tahmin işlem hattının parçası olarak dosya olmayan eğitim verilerini yüklemek için nasıl kullanılacağını keşfedin.
+title: Metin dosyasında olmayan veri ile bir makine öğrenmesi modeli eğitme - ML.NET
+description: ML.NET'i dosyada olmayan eğitim verisi kullanarak, tahmin amaçlı bir makine öğrenmesi modelinin iş hattında nasıl kullanacağınızı keşfedin.
 ms.date: 11/07/2018
 ms.custom: mvc,how-to
 ms.openlocfilehash: 971c5c62acc9dd7bf29aa11ce898c2b76822c3d7
@@ -10,14 +10,14 @@ ms.contentlocale: tr-TR
 ms.lasthandoff: 12/10/2018
 ms.locfileid: "53125408"
 ---
-# <a name="train-a-machine-learning-model-with-data-thats-not-in-a-text-file---mlnet"></a>Bir metin dosyasına - ML.NET olmayan veriler ile machine learning modeli eğitme
+# <a name="train-a-machine-learning-model-with-data-thats-not-in-a-text-file---mlnet"></a>Metin dosyasında olmayan veri ile bir makine öğrenmesi modeli eğitme - ML.NET
 
-ML.NET kanıtlanabilir yaygın olarak kullanıldığı yerler kullanılmasıdır `TextLoader` eğitim verilerini bir dosyadan okuma için.
-Ancak, gerçek zamanlı eğitim senaryolarda veri başka bir yerde, aşağıdaki gibi olabilir:
+ML.NET için yaygın olarak gösterilen kullanım senaryosu, eğitim verilerini bir dosyadan okumak için `TextLoader`'ı kullanmaktır.
+Ancak, pratikte eğitim verileri farklı kaynaklardan gelebilir. Bu kaynaklar aşağıdaki gibi olabilir:
 
-* SQL tablolarında
-* günlük dosyalarından ayıklanan
-* çalışma sırasında oluşturulan
+* SQL tablolarından
+* Log dosyalarından ayıklanan
+* Çalışma sırasında oluşturulan
 
 Kullanım [şema kavramayı](https://github.com/dotnet/machinelearning/tree/master/docs/code/SchemaComprehension.md) varolan getirmek için C# `IEnumerable` ML.NET içine bir `DataView`.
 
